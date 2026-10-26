@@ -21,7 +21,8 @@ export async function getStaticPaths() {
 	}));
 }
 
-const { category, posts } = Astro.props;
+const category = Astro.params.category as string;
+const { posts } = Astro.props;
 const label = CATEGORY_LABELS[category] ?? category;
 ---
 
