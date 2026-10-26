@@ -1,0 +1,23 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>你好，欢迎来到我的小站 👋</h1>
+			<p>这里是我的个人博客，用来记录学习笔记、折腾过程和一些生活碎片。</p>
+			<p>本站由 <a href="https://astro.build/" target="_blank">Astro</a> 构建，托管在 GitHub Pages 上。</p>
+			<p>想看文章就去 <a href="/blog">博客</a> 页面逛逛吧。</p>
+		</main>
+		<Footer />
+	</body>
+</html>
